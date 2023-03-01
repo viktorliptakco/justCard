@@ -90,6 +90,35 @@
         false
         );
 
+        window.addEventListener(
+            "orientationchange",
+            () => {
+                if (timeout) {
+                window.cancelAnimationFrame(timeout);
+                }
+
+                timeout = window.requestAnimationFrame(() => {
+                const orientation = window.orientation;
+                const yValue = calcValue(orientation === -90 ? -90 : 90, 180);
+                const xValue = calcValue(orientation === 0 ? 0 : (orientation > 0 ? 90 : -90), 90);
+
+                cards.style.perspective = `${window.innerHeight * 2}px`;
+                cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+
+                [].forEach.call(images, (image) => {
+                    image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
+                });
+
+                [].forEach.call(backgrounds, (background) => {
+                    background.style.backgroundPosition = `${xValue * 0.45}px ${
+                    -yValue * 0.45
+                    }px`;
+                });
+                });
+            },
+            false
+        );
+
 
     </script>
 </body>
