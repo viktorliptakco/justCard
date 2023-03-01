@@ -42,7 +42,6 @@ h3 {
   text-align: left;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
-  transform: rotateX(11deg) rotateY(16.5deg);
 }
 
 .card {
