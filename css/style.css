@@ -48,14 +48,14 @@ h3 {
   border-radius: 15px;
   box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
   display: inline-block;
-  height: 250px;
+  height: 65vh;
+  width: 65vw;
   overflow: hidden;
   perspective: 1200px;
   position: relative;
   transform-style: preserve-3d;
   transform: translatez(35px);
   transition: transform 200ms ease-out;
-  width: 175px;
   text-align: center;
 }
 .card:hover {
@@ -83,8 +83,8 @@ h3 {
 }
 
 .card__one .card__img {
-  top: 49px;
-  right: 27px;
+  top: 55px;
+  right: 50px;
   height: 92%;
 }
 .card__one .card__bg {
