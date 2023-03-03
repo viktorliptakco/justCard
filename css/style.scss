@@ -14,20 +14,15 @@ body {
   margin: 0 20px;
 }
 
-h1 {
-  color: #3e3e42;
-  font-size:32px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  transform: translateZ(35px);
-}
-
 h3 {
   color: #eb285d;
-  font-size: 16px;
+  font-size: 26px;
   margin-bottom: 6px;
   transform: translateZ(25px);
+}
+
+h4 {
+  margin-top: 0;
 }
 
 .cards {
@@ -87,8 +82,8 @@ h3 {
 
 .card__one {
   .card__img {
-    top: 60px;
-    right: 80px;
+    top: 85px;
+    right: 85px;
     height: 85%;
   }
   .card__bg {
